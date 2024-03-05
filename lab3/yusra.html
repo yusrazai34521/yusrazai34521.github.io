@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Yusra Nadeem</title>
+            <style>
+                canvas {
+                    display: block;
+                    margin: 0 auto;
+                    border: 1px solid #000;
+                }
+            </style>
+        </head>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <!-- Your website logo or name goes here -->
+                <img src="logo.png" alt="Website Logo">
+            </div>
+            <nav>
+                <!-- Navigation menu goes here -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Any other introductory information can be placed here -->
+            <div class="intro">
+                <p>Welcome to our website! This is Yusra Nadeem, Founnder of Beauty premium designs .</p>
+            </div>
+        </header>
+
+        <main>
+            <section id="beauty-products">
+                <h1>Discover Beauty Products</h1>
+                <p>Welcome to our beauty products section, where you can explore a wide range of skincare, makeup, and haircare essentials.</p>
+                <p>We found our beauty products line in <time datetime="2023-07-
+                    20T20:17:40Z">July 20, 2023</time></p>
+    
+                <h2>Skincare</h2>
+                <p>Our skincare products are formulated to nourish and revitalize your skin, leaving it looking radiant and healthy.</p>
+                <ul>
+                    <li>Cleansers</li>
+                    <li>Moisturizers</li>
+                    <li>Face Masks</li>
+                    <li>Serums</li>
+                    <li><mark>Sunscreen</mark> is the most important product of our skincare line</li>
+                    <!-- Add more skincare products as needed -->
+                </ul>
+    
+                <h2>Makeup</h2>
+                <p>Enhance your natural beauty with our collection of makeup products designed to create stunning looks for any occasion.</p>
+                <ul>
+                    <li>Foundation</li>
+                    <li>Lipsticks</li>
+                    <li>Eyeshadows</li>
+                    <li>Mascaras</li>
+                    <!-- Add more makeup products as needed -->
+                </ul>
+    
+                <h2>Haircare</h2>
+                <p>Transform your hair with our haircare essentials that nourish, strengthen, and add shine to your locks.</p>
+                <ul>
+                    <li>Shampoos</li>
+                    <li>Conditioners</li>
+                    <li>Hair Oils</li>
+                    <li>Treatments</li>
+                    <!-- Add more haircare products as needed -->
+                </ul>
+            </section>
+
+                    <!-- Canvas for graphics or animations -->
+            <canvas id="beautyAnimation" width="400" height="200"></canvas>
+            <script>
+                // JavaScript code for beauty products animation
+                var canvas = document.getElementById('beautyAnimation');
+                var ctx = canvas.getContext('2d');
+        
+                // Define animation variables
+                var x = canvas.width / 2;
+                var y = canvas.height / 2;
+                var radius = 30;
+                var startAngle = 0;
+                var endAngle = Math.PI * 2;
+                var counterClockwise = false;
+                var frameCount = 0;
+        
+                function draw() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+                    // Draw animated circle
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+                    ctx.fillStyle = 'rgba(255, 0, 0, 0.5)';
+                    ctx.fill();
+                    ctx.closePath();
+        
+                    // Update animation variables
+                    x += Math.sin(frameCount * 0.05) * 2;
+                    y += Math.cos(frameCount * 0.05) * 2;
+                    radius = 30 + Math.sin(frameCount * 0.05) * 10;
+        
+                    frameCount++;
+        
+                    requestAnimationFrame(draw);
+                }
+        
+                draw(); // Start animation
+            </script>
+
+            <audio src="audio.mp3" controls>
+                Your browser does not support the audio tag
+            </audio>
+
+            <video src="skin_care.mp4" controls>
+                Your browser does not support the audio tag
+            </video>
+
+            <section id="skincare-form">
+                <h2>Skincare Information Form</h2>
+                <form action="/submit_skincare_info" method="post">
+                    <label for="skin-type">Skin Type:</label>
+                    <select id="skin-type" name="skin-type">
+                        <option value="normal">Normal</option>
+                        <option value="oily">Oily</option>
+                        <option value="dry">Dry</option>
+                        <option value="combination">Combination</option>
+                    </select><br><br>
+                    
+                    <label for="skin-concerns">Skin Concerns:</label><br>
+                    <input type="checkbox" id="acne" name="acne">
+                    <label for="acne">Acne</label><br>
+                    <input type="checkbox" id="aging" name="aging">
+                    <label for="aging">Aging</label><br>
+                    <input type="checkbox" id="dryness" name="dryness">
+                    <label for="dryness">Dryness</label><br>
+                    <!-- Add more checkboxes for other skin concerns -->
+                    
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section id="Conditional Comments">
+                <!--[if IE]>
+                    <script>
+                    This the beauty products line...
+                    </script>
+                <![endif]-->
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+                    <div class="social-media">
+                        <!-- Links to social media accounts -->
+                        <a href="https://www.facebook.com/yourwebsite"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/yourwebsite"><img src="download.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/yourwebsite"><img src="ins.png" alt="Instagram"></a>
+                        <!-- Add more social media icons and links as needed -->
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+
+
+    </body>
+</html>
