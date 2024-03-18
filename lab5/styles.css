@@ -3,9 +3,9 @@ body {
     margin: 20px;
     padding: 20px;
     background-color: #d2ecf0;
-  }
-  
-  header {
+}
+
+header {
     background-color: #96dee1;
     margin-bottom: 30px;
     padding: 20px;
@@ -13,66 +13,66 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
     font-size: large;
-  }
-  
-  h1, h2, h3 {
+}
+
+h1, h2, h3 {
     margin-top: 0;
-  }
-  
-  ul.contact {
+}
+
+ul.contact {
     list-style-type: none;
     padding: 0;
-  }
-  
-  ul.contact li {
+}
+
+ul.contact li {
     margin-bottom: 5px;
-  }
-  
-  section {
+}
+
+section {
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fcfcfc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .education-item, .experience-item, .project-item {
+}
+
+.education-item, .experience-item, .project-item {
     margin-bottom: 15px;
-  }
-  
-  .education-item h3, .experience-item h3, .project-item h3 {
+}
+
+.education-item h3, .experience-item h3, .project-item h3 {
     margin-top: 0;
     color: #333;
-  }
-  
-  .skills ul {
+}
+
+.skills ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
-  }
-  
-  .projects .project-item {
+}
+
+.projects .project-item {
     border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
     margin-bottom: 15px;
-  }
-  
-  .certificates ul {
+}
+
+.certificates ul {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    grid-gap: 10px;
     padding-left: 20px;
-  }
-  
-  .languages p {
+}
+
+.languages p {
     margin: 5px 0;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     header {
-      padding: 10px;
+        padding: 10px;
     }
     section {
-      padding: 15px;
+        padding: 15px;
     }
-  }
-
-
-  
+}
