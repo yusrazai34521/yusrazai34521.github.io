@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator using javascript - Easy Tutorials</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="menu-navigation">
+          <div class="submenu">
+            <div class="three-dots"></div>
+            <div class="submenu-content">
+              <button>
+                <a href="scientific_mode.html">Scientific Mode</a>
+              </button>
+              <button>
+                <a href="unit_conversion.html">Unit Conversion</a>
+              </button>
+              <button>
+                <a href="currency_conversion.html">Currency Conversion</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="display">
+            <input type="text" name="display" />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="AC"
+              onclick="display.value = '' "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="DE"
+              onclick="display.value = display.value.toString().slice
+                (0, -1) "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="."
+              onclick="display.value += '.' "
+              class="operator"
+            />
+            <input
+              type="button"
+              value="/"
+              onclick="display.value += '/' "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="display.value += '7' " />
+            <input type="button" value="8" onclick="display.value += '8' " />
+            <input type="button" value="9" onclick="display.value += '9' " />
+            <input
+              type="button"
+              value="*"
+              onclick="display.value += '*' "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="display.value += '4' " />
+            <input type="button" value="5" onclick="display.value += '5' " />
+            <input type="button" value="6" onclick="display.value += '6' " />
+            <input
+              type="button"
+              value="-"
+              onclick="display.value += '-' "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="display.value += '1' " />
+            <input type="button" value="2" onclick="display.value += '2' " />
+            <input type="button" value="3" onclick="display.value += '3' " />
+            <input
+              type="button"
+              value="+"
+              onclick="display.value += '+' "
+              class="operator"
+            />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="display.value += '00' " />
+            <input type="button" value="0" onclick="display.value += '0' " />
+            <input
+              type="button"
+              value="="
+              onclick="display.value =  eval(display.value)"
+              class="equal operator"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="clearDisplay()">AC</button>
+        <button onclick="deleteLast()">DEL</button>
+      </div>
+      <div class="submenu" id="submenu">
+        <button onclick="toggleSubMenu()">...</button>
+        <div class="submenu-content" id="submenuContent">
+           Inside the submenu content div -->
+<!-- <div class="submenu-content" id="submenuContent">
+            <button onclick="toggleScientificMode()">Scientific Mode</button>
+            <div class="scientific-function" style="display: none">
+              <button onclick="calculateSquareRoot()">√</button>
+              <button onclick="calculateSine()">sin</button>
+              <button onclick="calculateCosine()">cos</button>
+              <button onclick="calculateTangent()">tan</button>
+              <button onclick="calculatePower()">x²</button>
+              <button onclick="insertPi()">π</button>
+            </div>
+            <button onclick="toggleUnitConversion()">Unit Conversion</button>
+            <div class="unit-conversion-function" style="display: none">
+              <button onclick="convertFahrenheitToCelsius()">F to C</button>
+              <button onclick="convertCelsiusToFahrenheit()">C to F</button>
+            </div>
+            <button onclick="toggleCurrencyConversion()">
+              Currency Conversion
+            </button>
+            <div class="currency-conversion-function" style="display: none">
+              <button onclick="convertPKRtoUSD()">PKR to $</button>
+              <button onclick="convertUSDtoPKR()">$ to PKR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body> -->
+<!-- </html> -->
