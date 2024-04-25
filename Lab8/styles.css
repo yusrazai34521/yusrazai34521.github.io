@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #000;
+    color: #fff; /* Text color */
 }
 
 .container {
@@ -12,6 +14,7 @@ body {
 
 h1 {
     text-align: center;
+    color: #ff0000; /* Red for heading */
 }
 
 form {
@@ -21,6 +24,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    color: #ff0000; /* Red for labels */
 }
 
 input[type="text"],
@@ -29,28 +33,42 @@ textarea {
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    background-color: #222; /* Dark gray input background */
+    color: #fff; /* Text color */
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #750202; /* Red for button background */
     color: #fff;
     border: none;
     cursor: pointer;
+    border-radius: 5%;
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #f42020; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly scale up on hover */
 }
 
 .recipe {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    background-color: #222; /* Dark gray background for recipe */
 }
 
 .recipe img {
     max-width: 100%;
     display: block;
     margin-bottom: 10px;
+}
+
+#imagePreview {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #ff0000; /* Red border for image preview */
+    border-radius: 5px;
 }
