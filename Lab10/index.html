@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login Form</h2>
+      <form id="loginForm" onsubmit="return validateForm()">
+        <label for="login"><b>Login</b></label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="login"
+          id="login"
+          required
+        />
+
+        <label for="password"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="password"
+          id="password"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        var login = document.getElementById("login").value;
+        var password = document.getElementById("password").value;
+
+        // Check if username and password match
+        if (login === "Galgotias" && password === "university") {
+          window.location.href = "welcome.html";
+          return false; // Prevent form submission
+        } else {
+          alert("Wrong username or password. Please try again.");
+          return false; // Prevent form submission
+        }
+      }
+    </script>
+  </body>
+</html>

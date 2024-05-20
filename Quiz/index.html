@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Interface</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Quiz Interface</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h2>Lessons and insights from 8 years</h2>
+        <p>Test Your Knowledge</p>
+        <button id="startQuiz">Start Quiz</button>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h3>Our Clients</h3>
+        <div class="client-logos">
+          <img src="logo1.png" alt="Client 1" />
+          <img src="logo2.png" alt="Client 2" />
+          <img src="logo3.png" alt="Client 3" />
+          <img src="logo4.png" alt="Client 4" />
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-container">
+      <div class="container">
+        <div id="quiz">
+          <div id="question-container" class="hide">
+            <div id="question">Question text</div>
+            <div id="answer-buttons" class="btn-container">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="next-btn" class="btn hide">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <div class="container">
+        <h3>Helping a local business reinvent itself</h3>
+        <div class="stats-grid">
+          <div>
+            <h4>2,345,341</h4>
+            <p>Quizzes Taken</p>
+          </div>
+          <div>
+            <h4>46,528</h4>
+            <p>Questions Available</p>
+          </div>
+          <div>
+            <h4>839,517</h4>
+            <p>Happy Users</p>
+          </div>
+          <div>
+            <h4>1,524,634</h4>
+            <p>Certificates Awarded</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <div class="container">
+        <h3>Blog & Insights</h3>
+        <div class="blog-grid">
+          <div class="blog-post">
+            <h4>How to design your site footer like we do</h4>
+            <p>Learn the best practices for designing a great footer.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Caring is the new marketing</h4>
+            <p>Understand the importance of empathy in marketing.</p>
+          </div>
+          <div class="blog-post">
+            <h4>Pelentesque suscipit fringilla libero eu.</h4>
+            <p>Discover effective tips to enhance your website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Quiz Interface. All rights reserved.</p>
+        <nav>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
